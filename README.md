@@ -34,7 +34,7 @@ This project provides a FastAPI-based service that generates embeddings for inpu
    git clone https://github.com/ammosu/e5-embedding-api.git
    cd e5-embedding-api
    ```
-2. Build and run the service using Docker Compose:
+2. **Build and run the service using Docker Compose**:
 
    ```bash
    docker-compose up -d --build
