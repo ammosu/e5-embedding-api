@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  embedding:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: embedding
+    ports:
+      - "8080:7860"
+    environment:
+      - MODEL_CACHE_DIR=/model_cache
+    volumes:
+      - model_cache:/model_cache
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
+    dns:
+      - 8.8.8.8
+
+volumes:
+  model_cache:
