@@ -11,7 +11,6 @@ This project provides a FastAPI-based service that generates embeddings for inpu
 - [Configuration](#configuration)
 - [API Reference](#api-reference)
 - [Deployment](#deployment)
-- [License](#license)
 
 ## Features
 
@@ -100,7 +99,3 @@ To view the logs of the running service:
 ```bash
 docker-compose logs -f
 ```
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.  
